@@ -838,7 +838,7 @@ button:hover {
 
     .service-heading{
         margin-top: 0px;
-        margin-left: 5%;
+        margin-left: 10%;
         font-size: 35px;
     }
     .service-1{
@@ -846,11 +846,13 @@ button:hover {
         justify-content: center;
         margin-top: 20px;
         align-items: center;
+        margin-left: 0px;
     }
     .service{
         margin-top: 30px;
         text-align: left;
         align-items: center; 
+        margin-left: 0px;
     }
     .service p{
         font-size: 13px;
@@ -880,12 +882,13 @@ button:hover {
         align-items: center;
     }
     .work-hedding{
-        margin-left: 5%;
+        margin-left: 10%;
         font-size: 20px;
     }
     .work-container{
         margin-top: 30px;
         align-items: center;
+        margin-left: 0px;
     }
     .readmore{
         margin-left: 28%;
@@ -897,7 +900,7 @@ button:hover {
 }
 @media only screen and (max-width:700px){    
     .contact-div{
-        margin-top: 850px;
+        margin-top: 900px;
         height: max-content;
     }
     .contact-div h1{
