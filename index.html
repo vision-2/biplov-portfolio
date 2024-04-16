@@ -45,6 +45,7 @@
         </div>
     </div>
     <div class="frame1" id="home" data-aos="zoom-in-right">
+        <video autoplay muted loop plays-inline><source src="/Image/dark.mp4" type="video/mp4"></video>
         <div class="front">
             <p>Hi my name is </p>
             <div class="name">
@@ -90,11 +91,9 @@
             document.body.classList.toggle('dark-theme');
             if (document.body.classList.contains("dark-theme")) {
                 icon.src = "Image/moon.png";
-                frame1.src = "Image/wall.jpg";
             }
             else {
                 icon.src = "Image/sun.png";
-                frame1.src = "Image/wallpaper.jpg";
             }
 
         })

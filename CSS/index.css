@@ -22,6 +22,36 @@
 body {
     background-color: var(--primary-color);
 }
+.frame1 video {
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+}
+
+.front {
+    position: relative;
+
+}
+
+@media (min-aspect-ratio:16/9) {
+    .frame1 video {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-aspect-ratio:16/9) {
+    .frame1 video {
+        width: auto;
+        height: 100%;
+    }
+
+}
+
+
 
 .frame1 {
     background-color:white;
