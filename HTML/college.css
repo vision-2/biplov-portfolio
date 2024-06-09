@@ -4,25 +4,30 @@
 }
 
 .info1 {
-  display: flex;
+   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   border: 1px solid black;
   border-top: none;
   border-bottom: none;
-  padding: 10px;
+  padding: 10px; 
 }
 
 .info {
-  display: flex;
   list-style: none;
   justify-content: space-evenly;
-  margin-bottom: 0px;
+  margin-bottom: 0px; 
 
 }
 
 .contact1 {
   margin-left: 10px;
+}
+.content ul{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
 }
 
 .re {
@@ -130,7 +135,7 @@
   background-color: #335888;
   width: 100%;
   height: 1000px;
-  text-align: center;
+  text-align:center;
 }
 
 .mid1 {
@@ -141,6 +146,9 @@
   text-align: center;
   color: white;
   margin-top: 20px;
+}
+.mid3{
+  text-align: center;
 }
 .mid4 {
   display: flex;
@@ -182,6 +190,8 @@
 
 .program-a {
   display: flex;
+  flex-wrap: wrap;
+  gap:10px;
 
 
 }
@@ -227,19 +237,20 @@
 }
 
 .faci1 {
-  height: 300px;
-  width: 325px;
+  height: 250px;
+  width: 280px;
   margin: 10px;
 
 }
 
 .facilities1 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  
   border: none;
   box-shadow: rgb(165, 162, 162);
-  height: 540px;
-  width: 350px;
-  margin-left: 100px;
+  height: 500px;
+  width: 300px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -252,11 +263,12 @@
 .read {
   display: flex;
   border: none;
+  align-self: self-end;
   width: 100px;
   height: 40px;
   align-items: center;
-  margin-left: 130px;
-  margin-top: 25px;
+  /* margin-left: 100px;
+  margin-top: 25px; */ 
   border-radius: 10px;
   background-color: rgb(63, 43, 70);
   font-size: 15px;
@@ -274,7 +286,9 @@
 }
 
 .facilities-A {
-  display: inline-flex
+  display:flex;
+  flex-wrap: wrap;
+  gap: 80px;
 }
 
 .facilities-B {
@@ -327,7 +341,9 @@
 }
 
 .event-A {
-  display: inline-flex;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .event-h1 {
@@ -349,7 +365,6 @@
   box-shadow: rgb(165, 162, 162);
   height: 300px;
   width: 300px;
-  margin-left: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
 }
 

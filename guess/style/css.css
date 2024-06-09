@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poetsen One", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    min-height: 30px;
+    min-width: 30px;
+    resize: both;
+    overflow: auto;
+    max-height: 90vh;
+    max-width: 90vw;
+    gap: 10px;
+    border: 1px solid;
+    padding: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(45, 44, 44, 0.736);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#right {
+    display: none;
+    font-size: 30px;
+}
+
+#guess_box {
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#button {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(42, 38, 38);
+    transition: 0.2s;
+}
+
+#button:hover {
+    background-color: rgb(227, 159, 30);
+    cursor: pointer;
+}
+
+#mygussed {
+    font-size: 30px;
+
+}
+
+.lives {
+    font-size: 30px;
+}
+
+#picture,
+#picture1 {
+    display: none;
+}
+
+#guessed {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+        max-width: 100vw;
+        max-height: 100vh;
+        font-size: 10px;
+
+    }
+
+    #guess_box {
+        max-width: 40vh;
+        font-size: 10px;
+        height: 30px;
+
+    }
+
+    #button {
+        font-size: 10px;
+        height: max-content;
+        padding: 5px 15px 5px 15px;
+        width: max-content;
+        margin-top: 5px;
+        margin-left: 5px;
+
+    }
+
+    #mygussed,
+    #right,
+    #lives,#guessed {
+        font-size: 14px;
+    }
+
+    #picture,
+    #picture1 {
+        height: 400px;
+        width: 300px;
+    }
+    
+}
