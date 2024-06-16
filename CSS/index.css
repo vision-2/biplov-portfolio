@@ -639,7 +639,6 @@ body {
     margin-top: 20px;
 }
 
-/* Hover Styles */
 .work-container:hover img {
     transform: scale(1.1);
 }
@@ -649,13 +648,14 @@ body {
 }
 
 .readmore {
+    display:flex;
+    margin: auto;
     border: 1px solid #F20C55;
     border-radius: 5px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 42%;
     width: 150px;
     margin-top: 50px;
     transition: 0.5s;
