@@ -578,7 +578,7 @@ body {
 }
 
 /* Work Container Styles */
-.work-container {
+.work-container{
     position: relative;
     overflow: hidden;
     border: 1px solid var(--secondary-color);
@@ -589,9 +589,12 @@ body {
     background-color: var(--third-color);
     transition-duration: 0.3s;
 }
-
+.hidden{
+    display: none;
+}
 /* Image Styles */
 .work-container img {
+    
     display: block;
     max-width: 100%;
     max-height: 100%;

@@ -301,70 +301,87 @@
                     <p>Rock Paper Scissors is a simple hand game where two players simultaneously form one of three
                         shapes (rock, paper, or scissors) with their hand, and the winner is determined by the rules:
                         rock crushes scissors, scissors cuts paper, and paper covers rock.</p>
-                    <a href="./rock_paper/rock.html"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
             </div>
-
+                <div class="work-container hidden" class="service"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <img src="Image/comming.jpg" alt="Can't load" height="400px" width="400px">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>.........................................................................................</p>
+                        <a ><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work-container hidden" class="service"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <img src="Image/comming.jpg" alt="Can't load" height="400px" width="400px">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>......................................................................................</p>
+                        <a ><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="readmore"><span><a href="#">Read More</a></span></div>
-
-        <!-- /* --------------------------------------------------------------------------------------------------- */
+    </div>
+    <div class="readmore" id="read_more"><a>View More</a></div>
+    </div>
+    <script src="./JavaScript/main.js"> </script>
+    <!-- /* --------------------------------------------------------------------------------------------------- */
     /* ------------------------------------------CONTACT------------------------------------------------- */
    /* ---------------------------------------------------------------------------------- --------------- */ -->
-        <div class="contact-div" id="contact">
-            <h1>Contact Me</h1>
-            <div class="contact">
-                <div class="info" data-aos="zoom-in-right">
-                    <div class="mail">
-                        <p><i class="fa-solid fa-paper-plane"></i> biplovdhakal@gmail.com</p>
-                        <p><i class="fa-solid fa-mobile-screen"></i> 9761896393</p>
+    <div class="contact-div" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="info" data-aos="zoom-in-right">
+                <div class="mail">
+                    <p><i class="fa-solid fa-paper-plane"></i> biplovdhakal@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> 9761896393</p>
+                </div>
+                <div class="media-flex">
+                    <div class="media"> <a href="https://www.facebook.com/biplov11"><i
+                                class="fa-brands fa-facebook"></i></a></div>
+                    <div class="media"> <a href="https://www.instagram.com/biplov___/"><i
+                                class="fa-brands fa-instagram"></i></a></div>
+                    <div class="media"> <a href="https://twitter.com/Biplov1221287"><i
+                                class="fa-brands fa-x-twitter"></i></a></div>
+                    <div class="media"> <a href="https://github.com/vision-2"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="media-flex">
-                        <div class="media"> <a href="https://www.facebook.com/biplov11"><i
-                                    class="fa-brands fa-facebook"></i></a></div>
-                        <div class="media"> <a href="https://www.instagram.com/biplov___/"><i
-                                    class="fa-brands fa-instagram"></i></a></div>
-                        <div class="media"> <a href="https://twitter.com/Biplov1221287"><i
-                                    class="fa-brands fa-x-twitter"></i></a></div>
-                        <div class="media"> <a href="https://github.com/vision-2"><i
-                                    class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <button class="cv_button" id="cv1">
-                        <a href="/Image/CV.pdf" download>Downloard CV</a>
-                    </button>
+                </div>
+                <button class="cv_button" id="cv1">
+                    <a href="/Image/CV.pdf" download>Downloard CV</a>
+                </button>
 
-                </div>
-                <div class="form" data-aos="zoom-in-right">
-                    <form class="querry">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button class="form_btn" name="btn" stype="submit">Submit</button>
-                    </form>
-                </div>
             </div>
-            <div class="copyright">
-                <p>Copyright © Biplov Dhakal.</p>
+            <div class="form" data-aos="zoom-in-right">
+                <form class="querry">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="form_btn" name="btn" stype="submit">Submit</button>
+                </form>
             </div>
         </div>
-        <script>
-            let url = 'https://script.google.com/macros/s/AKfycbzw2Oowm7pCcrOvRq0hMzipXa5d3TLZy3UIIv4ObR43v5D4vcVa5IDfSkh-EENUBSRF/exec'
-            let form = document.querySelector('.querry');
-            form.addEventListener("submit", (e) => {
-                e.target.btn.innerHTML = "Submitting...";
-                let d = new FormData(form);
-                fetch(url, {
-                    method: "post",
-                    body: d
-                }).then((res) => res.text())
-                    .then((finalRes) => {
-                        e.target.btn.innerHTML = "Submit";
-                        consol.log(finalRoes)
-                    })
-                e.preventDefault();
-            })
-        </script>
+        <div class="copyright">
+            <p>Copyright © Biplov Dhakal.</p>
+        </div>
+    </div>
+    <script>
+        let url = 'https://script.google.com/macros/s/AKfycbzw2Oowm7pCcrOvRq0hMzipXa5d3TLZy3UIIv4ObR43v5D4vcVa5IDfSkh-EENUBSRF/exec'
+        let form = document.querySelector('.querry');
+        form.addEventListener("submit", (e) => {
+            e.target.btn.innerHTML = "Submitting...";
+            let d = new FormData(form);
+            fetch(url, {
+                method: "post",
+                body: d
+            }).then((res) => res.text())
+                .then((finalRes) => {
+                    e.target.btn.innerHTML = "Submit";
+                    consol.log(finalRoes)
+                })
+            e.preventDefault();
+        })
+    </script>
 </body>
 
 </html>
