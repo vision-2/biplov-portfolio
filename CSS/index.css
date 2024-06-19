@@ -185,25 +185,19 @@ body {
     animation-name: slide;
     animation-duration: 3s;
     overflow: hidden;
-    /* background-color: #4f68868f; */
 }
 
 .hire_button a {
     text-decoration: none;
     color: white;
-}
-
-.hire_button1 {
+    border: 2px solid #F20C55;
+    width: max-content;
+    padding: 0px 10px 0px 10px;
     background-color: #F20C55;
-    border-radius: 10px;
+    border-radius:10px;
     transition: 0.2s;
 }
 
-.hire_button1:hover {
-    transform: translateY(-10px);
-    box-shadow: 5px 10px 0 #f20c557e;
-
-}
 
 .cv_button a {
     text-decoration: none;
@@ -216,6 +210,13 @@ body {
     width: max-content;
     height: max-content;
     padding: 5px 15px;
+    background-color: #F20C55;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: "Anta", sans-serif;
+
 }
 
 .cv_button:hover {
@@ -506,7 +507,7 @@ body {
 .service-1 {
     display: flex;
     text-align: center;
-    width: fit-content;
+    width: max-content;
     flex-wrap: wrap;
     gap: 3em;
     margin-top: 50px;
@@ -693,8 +694,8 @@ body {
 
 .info,
 .form {
-    height: fit-content;
-    width: fit-content;
+    height: max-content;
+    width: max-content;
     color: var(--secondary-color);
 }
 
@@ -953,13 +954,13 @@ button {
     }
 
     .cv_button a {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .cv_button {
         margin-top: 30px;
         margin-left: 20px;
-        padding: 5px 10px;
+        padding:0px 10px 0px 10px;
     }
 }
 

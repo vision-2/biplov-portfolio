@@ -7,7 +7,7 @@
     margin-top: 200px;
 }
 body {
-    background-image: url("bg.jpg");
+    background-color: #000000;
     font-family: "Lobster", sans-serif;
     margin: 0;
     padding: 0;
@@ -22,14 +22,11 @@ body {
     border: 2px solid rgba(170, 165, 165, 0.467);
     box-shadow: 5px 3px 0px 0px rgba(170, 165, 165, 0.558);
     border-radius: 10px;
-    background-color: rgba(100, 100, 223, 0.247);
     cursor: context-menu;
     width: 500px;
-    margin-top: 10px;
     max-height: max-content;
     margin: auto;
     justify-content: center;
-    align-items: center;
 }
 
 .runs, .ball, .extra {
@@ -40,7 +37,7 @@ body {
     font-size: 1rem;
     color: white;
     border-radius: 5px;
-    background-color: rgba(22, 154, 211, 0.395);
+    background-color: #015186;
 }
 
 .score, .scoredRun {
@@ -51,7 +48,6 @@ body {
     justify-content: center;
     color: white;
     margin-top: 10px;
-    /* border: 1px solid; */
     padding: 5px 10px;
 }
 
@@ -68,15 +64,16 @@ body {
 }
 
 .extraA {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     display: none;
-    /* position: absolute; */
-    background-color:rgb(76, 198, 228);
     min-width: 60px;
     margin-top: 10px;
 }
 .Run_scored{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     height: 30px;
     min-width: 200px;
     max-width: max-content;
@@ -87,10 +84,10 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    background-color: rgba(26, 122, 225, 0.671);
+    border: 2px solid rgba(170, 165, 165, 0.467);
+    box-shadow: 5px 5px 0px 0px rgba(170, 165, 165, 0.467);
     border-radius: 10px;
-    justify-content: center;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     width: 60%;
    margin: auto;
 }

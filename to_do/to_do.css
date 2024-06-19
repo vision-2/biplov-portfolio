@@ -64,7 +64,6 @@ body{
 .listdiv{
     display: flex;
     flex-wrap: wrap;
-  
 }
 
 .cross {
