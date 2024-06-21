@@ -32,12 +32,12 @@
         <div class="header-A"><a class="b">B</a><a class="lov">iplov.</a></div>
         <div class="header-B">
             <ul id="sidemenu">
-                <li> <a href="#home">Home</a> </li>
-                <li> <a href="#about">About</a> </li>
-                <li> <a href="#service">Service</a> </li>
-                <li> <a href="#portfolio">Portfolio</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
-                <li> <img src="../Image/sun.png" id="icon" alt="Can't load"></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><img src="../Image/sun.png" id="icon" alt="Can't load"></li>
                 <li><i class="fa-solid fa-x" onclick="closemenu()"></i></li>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -66,10 +66,60 @@
                 <a title="github" href="https://github.com/vision-2"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="hire_button">
-                <a href="#contact">Haire me!</a>
+                <button class="hire_button1"><a href="#contact">Hire Me!</a></button>
             </div>
         </div>
     </div>
+    <!-- <script>
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Designer";
+            }, 0);         
+            setTimeout(() => {
+                text.textContent = "Student";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Web Developer";
+            }, 8000);
+        }
+        textLoad();
+
+    </script> -->
+    <script>
+        var back = document.getElementsByClassName("frame1");
+        var toggle = document.getElementById("icon");
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "Image/moon.png";
+            }
+            else {
+                icon.src = "Image/sun.png";
+            }
+
+        })
+    </script>
+    <script>
+        let slidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            slidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            slidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 700
+        }
+
+        );
+    </script>
     <!-- /* -------------------------------------------------------------------------------------------------- */
                 /* ------------------------------------------ABOUT--------------------------------------------------- */
                 /* ------------------------------------------------------------------------------------------------- */ -->
@@ -103,7 +153,7 @@
                         <li><span>CSS</span><br>
                             <p>I am proficient in CSS, which allows me to style and design web pages effectively.
                             </p>
-
+                            <br>
                         </li>
                         <li> <span>Java Script</span><br>
                             <p>I am proficient in JavaScript, a versatile programming language used for creating
@@ -136,22 +186,19 @@
                 <div class="tab-contents" id="education">
                     <ul>
                         <li> <span>2024</span><br>
-
-                            <p>Studying BSc.CSIT at Asian School of Management and Technology
-                            </p>
+                            <p>Studying BSc.CSIT at Asian School of Management and Technology</p>
                         </li>
+
                         <li><span>2023</span><br>
-                            <p>SLC from Mount View English Boarding School
-                            </p>
-                            <br>
+                            <p>SLC from Mount View English Boarding School</p>
                         </li>
                         <li> <span>2021</span><br>
                             <p>SEE</p>
                         </li>
                     </ul>
                 </div>
-                <div class="cv_button" id="cv">
-                    <a href="/Image/CV.pdf" download>Downloard CV</a>
+                <div class="downloard_cv">
+                    <button class="cv_button"><a href="/Image/CV.pdf" download>Downloard CV</a></button>
                 </div>
             </div>
 
@@ -172,10 +219,6 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
     <!-- /* --------------------------------------------------------------------------------------------------- */
       /* ------------------------------------------SERVICES------------------------------------------------- */
      /* --------------------------------------------------------------------------------------------------- */ -->
@@ -224,29 +267,29 @@
                 <img src="Image/guess.jpeg" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
                     <h3>Guess the number</h3>
-                    <p>The guess number game is a classic and simple game where computer randomly generate a number
-                        within a
-                        range 0f 1 to 100, and the player tries to guess what that number is.</p>
+                    <p>The guess number game is a classic and simple game where computer randomly generates a number
+                        from 1 to 100 and player tries to guess what that number is.</p>
                     <a title="project" href="./guess/index.html"><i class="fa fa-external-link"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="work-container" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                <img src="Image/task.jpg" alt="Can't load" height="400px" width="400px">
-                <div class="layer">
-                    <h3>To-Do-List</h3>
-                    <p>A to-do list is an organized, prioritized compilation of tasks or activities that need to be
-                        completed, helping individuals manage their time and responsibilities effectively.</p>
-                    <a title="project" href="./to_do/to_do.html"><i class="fa fa-external-link"
-                            aria-hidden="true"></i></a>
-                </div>
+            <div class="work-container" class="service" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+            <img src="Image/task.jpg" alt="Can't load" height="400px" width="400px">
+            <div class="layer">
+                <h3>To-Do-List</h3>
+                <p>A to-do list is an organized, prioritized compilation of tasks or activities that need to be
+                    completed, helping individuals manage their time and responsibilities effectively.</p>
+                <a title="project" href="./to_do/to_do.html"><i class="fa fa-external-link"
+                        aria-hidden="true"></i></a>
             </div>
+        </div>
             <div class="work-container" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <img src="Image/Cricket.png" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
                     <h3>Score card</h3>
                     <p>A live cricket scorecard provides real-time updates on match details, including team scores,
-                        wickets, overs.</p>
+                        wickets, overs</p>
                     <a title="project" href="./cricket/cricket.html"><i class="fa fa-external-link"
                             aria-hidden="true"></i></a>
                 </div>
@@ -255,16 +298,14 @@
                 <img src="Image/rock.jpg" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
                     <h3>Rock Paper Scissors</h3>
-                    <p>Rock Paper Scissors is a simple hand game where player and computer simultaneously form one of
-                        three
-                        shapes (rock, paper, or scissors) with their hand, and the winner is determined by the rules:
+                    <p>Rock Paper Scissors is a simple hand game where  player and computer simultaneously select one of three
+                        shapes (rock, paper, or scissors), and the winner is determined by the rules:
                         rock crushes scissors, scissors cuts paper, and paper covers rock.</p>
                     <a title="project" href="./rock_paper/rock.html"><i class="fa fa-external-link"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="work-container hidden" class="service" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+            <div class="work-container hidden" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <img src="Image/web.webp" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
                     <h3>Websites</h3>
@@ -303,19 +344,19 @@
                     <p><i class="fa-solid fa-mobile-screen"></i> 9761896393</p>
                 </div>
                 <div class="media-flex">
-                    <div class="media"> <a title="social_media" href="https://www.facebook.com/biplov11"><i
+                    <div class="media"> <a title="facebook" href="https://www.facebook.com/biplov11"><i
                                 class="fa-brands fa-facebook"></i></a></div>
-                    <div class="media"> <a title="social_media" href="https://www.instagram.com/biplov___/"><i
+                    <div class="media"> <a title="instagram" href="https://www.instagram.com/biplov___/"><i
                                 class="fa-brands fa-instagram"></i></a></div>
-                    <div class="media"> <a title="social_media" href="https://twitter.com/Biplov1221287"><i
+                    <div class="media"> <a title="twitter" href="https://twitter.com/Biplov1221287"><i
                                 class="fa-brands fa-x-twitter"></i></a></div>
-                    <div class="media"> <a title="social_media" href="https://github.com/vision-2"><i
+                    <div class="media"> <a title="github" href="https://github.com/vision-2"><i
                                 class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div class="cv_button" id="cv1">
+                <button class="cv_button" id="cv1">
                     <a href="/Image/CV.pdf" download>Downloard CV</a>
-                </div>
+                </button>
 
             </div>
             <div class="form" data-aos="zoom-in-right">
@@ -348,8 +389,6 @@
             e.preventDefault();
         })
     </script>
-    
-
 </body>
 
 </html>
