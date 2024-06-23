@@ -7,7 +7,7 @@
     <link rel="shortcut icon" xtype="x-icon" href="/Image/ddd.jpeg">
     <title>Biplov.</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/aos.css">
+    <!-- <link rel="stylesheet" href="CSS/aos.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
@@ -117,7 +117,6 @@
             offset: 300,
             duration: 700
         }
-
         );
     </script>
     <!-- /* -------------------------------------------------------------------------------------------------- */
@@ -198,7 +197,7 @@
                     </ul>
                 </div>
                 <div class="downloard_cv">
-                    <button class="cv_button"><a href="/Image/CV.pdf" download>Downloard CV</a></button>
+             <button class="cv_button"><a href="/Image/CV.pdf" download>Downloard CV</a></button>       
                 </div>
             </div>
 
@@ -364,7 +363,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="button" class="form_btn" name="btn" stype="submit">Submit</button>
+                    <button  class="form_btn" name="btn" stype="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -377,6 +376,7 @@
         let form = document.querySelector('.querry');
         form.addEventListener("submit", (e) => {
             e.target.btn.innerHTML = "Submitting...";
+            
             let d = new FormData(form);
             fetch(url, {
                 method: "post",
@@ -387,8 +387,9 @@
                     consol.log(finalRoes)
                 })
             e.preventDefault();
+            form = document.querySelector('.querry').value='';
         })
-    </script>
+           </script>
 </body>
 
 </html>

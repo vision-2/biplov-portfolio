@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #12100E;
+    color: #D4DF9E;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.board{
+height: 500px;
+width: 500px;
+background-color:#30321C ;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+padding: 20px;
+}
+.card
+{
+height: 100px;
+width: 100px;
+background-color:#6B654B;
+display: flex;
+border-radius: 10px;
+align-items: center;
+justify-content:center;
+}
