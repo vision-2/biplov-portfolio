@@ -14,14 +14,19 @@ body{
 .board{
 height: 500px;
 width: 500px;
-background-color:#30321C ;
+background-color:#30321C;
+border-radius: 10px;
 display: grid;
 grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(4,1fr);
 gap: 20px;
 padding: 20px;
+transform: rotateY(180deg);
+padding-left: 50px;
+margin-top: 50px;
 }
-.card
-{
+.card{
+position: relative;
 height: 100px;
 width: 100px;
 background-color:#6B654B;
@@ -29,4 +34,36 @@ display: flex;
 border-radius: 10px;
 align-items: center;
 justify-content:center;
+perspective: 500px;
+font-size: 50px;
+transform-style: preserve-3d;
+transition: 0.5s;
+}
+.card::after{
+    content: "";
+    background-color: #D4DF9E;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card.flip{
+    transform: rotateY(180deg);
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #30321C;
+    color: #D4DF9E;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    
 }
