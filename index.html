@@ -34,7 +34,7 @@
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
+                <li><a href="#service">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><img src="../Image/sun.png" id="icon" alt="Can't load"></li>
@@ -197,7 +197,7 @@
                     </ul>
                 </div>
                 <div class="downloard_cv">
-             <button class="cv_button"><a href="/Image/CV.pdf" download>Downloard CV</a></button>       
+                    <button class="cv_button"><a href="/Image/CV.pdf" download>Downloard CV</a></button>
                 </div>
             </div>
 
@@ -250,6 +250,15 @@
                 <img src="/Image/c.png" alt="">
 
             </div>
+            <div class="service" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="/Image/figma.webp" alt="">
+
+            </div>
+
+            <div class="service" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="/Image/react.png" alt="">
+
+            </div>
         </div>
     </div>
     </div>
@@ -272,17 +281,16 @@
                             aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="work-container" class="service" data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom">
-            <img src="Image/task.jpg" alt="Can't load" height="400px" width="400px">
-            <div class="layer">
-                <h3>To-Do-List</h3>
-                <p>A to-do list is an organized, prioritized compilation of tasks or activities that need to be
-                    completed, helping individuals manage their time and responsibilities effectively.</p>
-                <a title="project" href="./to_do/to_do.html"><i class="fa fa-external-link"
-                        aria-hidden="true"></i></a>
+            <div class="work-container" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <img src="Image/task.jpg" alt="Can't load" height="400px" width="400px">
+                <div class="layer">
+                    <h3>To-Do-List</h3>
+                    <p>A to-do list is an organized, prioritized compilation of tasks or activities that need to be
+                        completed, helping individuals manage their time and responsibilities effectively.</p>
+                    <a title="project" href="./to_do/to_do.html"><i class="fa fa-external-link"
+                            aria-hidden="true"></i></a>
+                </div>
             </div>
-        </div>
             <div class="work-container" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <img src="Image/Cricket.png" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
@@ -297,22 +305,26 @@
                 <img src="Image/rock.jpg" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
                     <h3>Rock Paper Scissors</h3>
-                    <p>Rock Paper Scissors is a simple hand game where  player and computer simultaneously select one of three
+                    <p>Rock Paper Scissors is a simple hand game where player and computer simultaneously select one of
+                        three
                         shapes (rock, paper, or scissors), and the winner is determined by the rules:
                         rock crushes scissors, scissors cuts paper, and paper covers rock.</p>
                     <a title="project" href="./rock_paper/rock.html"><i class="fa fa-external-link"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="work-container hidden" class="service" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                <img src="Image/web.webp" alt="Can't load" height="400px" width="400px">
+            <div class="work-container hidden" class="service" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                <img src="Image/memory.png" alt="Can't load" height="400px" width="400px">
                 <div class="layer">
-                    <h3>Websites</h3>
-                    <p>Web design is a multidisciplinary field that involves designing and building websites. It
-                        encompasses several different aspects, including webpage layout, content production, and
-                        graphic
-                        design</p>
-                    <a title="project" href="/HTML/college.html"><i class="fa fa-external-link"
+                    <h3>Memory Game</h3>
+                    <p>
+                        A memory game challenges players to match pairs of cards from a face-down grid, testing and
+                        improving their recall abilities.
+
+
+                    </p>
+                    <a title="project" href="/Memory_game/memory.html"><i class="fa fa-external-link"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -363,7 +375,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button  class="form_btn" name="btn" stype="submit">Submit</button>
+                    <button class="form_btn" name="btn" stype="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -376,7 +388,7 @@
         let form = document.querySelector('.querry');
         form.addEventListener("submit", (e) => {
             e.target.btn.innerHTML = "Submitting...";
-            
+
             let d = new FormData(form);
             fetch(url, {
                 method: "post",
@@ -387,9 +399,9 @@
                     consol.log(finalRoes)
                 })
             e.preventDefault();
-            form = document.querySelector('.querry').value='';
+            form = document.querySelector('.querry').value = '';
         })
-           </script>
+    </script>
 </body>
 
 </html>

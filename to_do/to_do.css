@@ -53,7 +53,6 @@ body{
 }
 
 .list {
-    width: 100vh;
     height: max-content;
     padding: 10px;
     font-size: 20px;
@@ -67,9 +66,85 @@ body{
 }
 
 .cross {
-    padding-right: 150px;
+    padding-right:50px;
     color: #95676d;
 }
+.listdiv{
+  
+    line-height:2;
+}
+@media (max-width: 480px){
+    .container{
+        padding: 10px;  
+        height: 100vh;
+        box-shadow:none
+    }
+    #ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 1px;
+        padding-left: 0px;
+    }
+    .cross{
+        padding-right: 0px;
+        font-size: 13px;
+    }
+    #input-tab {
+        width: 90%;
+        font-size: 10px;
+        border:2px solid rgb(88, 80, 80);
+    }
+    #initialTask{
+        line-height: 2;
+        font-size: 10px;
+    }
+    .listdiv{
+        font-size: 10px;
+    }
+    .heading{
+        font-size:30px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .checkbox-wrapper-52 input[type="checkbox"] {
     visibility: hidden;
@@ -80,10 +155,10 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
-    line-height: 1;
+    line-height: 1.6;
 }
 
 .checkbox-wrapper-52 *,
@@ -94,7 +169,7 @@ body{
 
 .checkbox-wrapper-52 .item .cbx {
     position: relative;
-    top: 1px;
+    top : 3px;
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -106,7 +181,7 @@ body{
 
 .checkbox-wrapper-52 .item .cbx svg {
     position: relative;
-    top: -1px;
+    top: -3px;
     transform: scale(0);
     fill: none;
     stroke-linecap: round;
@@ -199,3 +274,4 @@ body{
         transform: scale(1.2);
     }
 }
+
