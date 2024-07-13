@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 320px;
+    height: 100vh; 
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Noto Sans", sans-serif;
+    margin: auto;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 10px;
+    place-items: center;
+    border-top: 2px solid black;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #A5A5A5;
+
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    font-size: 25px;
+    text-align: center;
+justify-content: center;
+border-radius: 50%;
+}
+.R1{
+    background-color: #A5A5A5;
+}
+.CL{
+    background-color: #FE9502;
+    color: #FEFFFE;
+}
+.NN{
+    background-color: #333333;
+    color: #FEFFFE;
+
+}
+@media (max-width:720px) {
+    body{
+        background-color: #000000;
+    }
+    .main-container{
+        border-radius: 0px;
+        margin: auto;
+}
+}
+
+.screen {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+ } 
+
+@media (max-width: 330px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .screen {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 330px) and (max-width: 426px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .screen {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 770px) {
+    .main-container {
+        width: 45%;
+    }
+
+    .buttons {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+    .screen {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-container {
+        width: 30%;
+    }
+
+    .buttons {
+        width: 80px;
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .screen {
+        font-size: 2rem;
+    }
+}
