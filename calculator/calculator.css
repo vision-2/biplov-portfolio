@@ -74,7 +74,7 @@ border-radius: 50%;
     height: 60px;
     background-color: #000;
     color: #fff;
-    font-size: 2rem;
+    font-size: 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +95,7 @@ border-radius: 50%;
     }
 
     .screen {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
 @media (min-width: 330px) and (max-width: 426px) {
@@ -110,7 +110,7 @@ border-radius: 50%;
     }
 
     .screen {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -126,7 +126,7 @@ border-radius: 50%;
     }
 
     .screen {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -142,6 +142,6 @@ border-radius: 50%;
     }
 
     .screen {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
