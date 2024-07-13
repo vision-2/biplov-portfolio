@@ -65,7 +65,7 @@ border-radius: 50%;
     }
     .main-container{
         border-radius: 0px;
-        margin: auto;
+        height: 90vh;
 }
 }
 
